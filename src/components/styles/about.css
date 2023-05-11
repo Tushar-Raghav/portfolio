@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+#aboutContainer{
+    height: 100%;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#aboutHeader{
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 7px;
+    font-weight: 400;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#aboutContent{
+    font-size: 6px;
+    height: 30%;
+    overflow: auto;
+}
+#aboutFooter{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    width: 20%;
+    border: 1px solid rgb(119, 253, 173);
+    background-color: bisque;
+}
+#aboutImg{
+    height: 60%;
+    width: 95%;
+}
+#aboutImgContent{
+    height: 30%;
+    width: 100%;
+    font-size: 7px;
+    font-weight: 600;
+    color: black;
+}
+#card:hover{
+    background-color: black;
+    animation: aboutMyCard 500ms infinite;
+}
+#card:hover #aboutImg{
+    background-color: white;
+    border-radius: 50%;
+    border: 0.5px solid red;
+    animation: aboutMyImg 2s;
+}
+#card:hover  #aboutImgContent{
+    background: transparent;
+    color: violet;
+    text-shadow: 2px 1px 10px  white;
+    font-size: 6px;
+    text-decoration-line: overline;
+    text-transform: uppercase;
+    text-decoration-color: rgb(254, 254, 255);
+    text-decoration-thickness: 1px;
+    cursor: progress;
+    animation: aboutMyText 500ms infinite;
+}
+@keyframes aboutMyCard{
+    from{border-color: white;}
+    to{border-color: transparent;}
+   }
+@keyframes aboutMyText {
+    from{text-decoration: overline;}
+    to{text-decoration: underline;}
+   }
+@keyframes aboutMyImg {
+    from{opacity: 0.1;}
+    to{opacity: 1;}
+   }

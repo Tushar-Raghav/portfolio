@@ -1,0 +1,102 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+#homeContainer{
+    width: 70vw;
+    height: 100%;
+}
+
+#greetsContent{
+    height: 70%;
+    padding-top: 5%;
+}
+
+.line-1{
+    height: 30%;
+    font-family: 'Anonymous Pro', monospace;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 7vw;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.line-2{
+    height: 30%;
+    font-family: 'Anonymous Pro', monospace;
+    margin-top: -5%;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 7vw;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.line-3{
+    height: 30%;
+    font-family: 'Anonymous Pro', monospace;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 7vw;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#cvFooter{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+
+#cvBtn{
+font-size: 2vw;
+font-weight: 600;
+padding: 1%;
+background-color: rgb(0, 0, 0);
+}
+#cvBtn a{    
+color: tomato;
+text-decoration: none;
+}
+
+#cvBtn:hover{
+  background: transparent;
+  color: violet;
+  text-shadow: 2px 1px 10px  white;
+  text-indent: 2%;
+  text-decoration-line: overline;
+  text-transform: uppercase;
+  text-decoration-color: rgb(254, 254, 255);
+  text-decoration-thickness: 1px;
+  cursor: progress;
+  animation: mymove 2s;
+  padding: 0.4em;
+}
+@keyframes mymove {
+ from{opacity: 1;}
+ to{opacity: 0.2;}
+}
+
+
+/* Animation */
+.anim-typewriter-1{
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+             blinkTextCursor 500ms steps(40) infinite normal;
+}
+.anim-typewriter-2{
+  animation: typewriter 4s steps(40) 4s 1 normal both,
+             blinkTextCursor 400ms steps(40) 4s infinite normal;
+}
+.anim-typewriter-3{
+  animation: typewriter 4s steps(40) 8s 1 normal both,
+             blinkTextCursor 450ms steps(40) 16s infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 69vw;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

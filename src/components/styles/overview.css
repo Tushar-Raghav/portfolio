@@ -1,0 +1,39 @@
+#overContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+    color: black;
+}
+
+
+#proPic{
+    height: 30%;
+    width: 60%;
+    border-radius: 50%;
+    margin-top: 10%;
+    border: 1px solid black;
+}
+
+
+#proDetails{
+    margin: 5% 0%;
+   
+}
+#proName{
+    font-size: 10px;
+}
+#proBio{
+    font-size: 6px;
+}
+
+#navList{
+    display: flex;
+    flex-direction: column;
+    font-size: 6px;
+    height: 30%;
+    justify-content: space-around;
+}
